@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+    <UserSecretsId>f3871934-fe66-497d-b996-301c0d8c1e71</UserSecretsId>
+    <StartupObject>AwsDemo.App.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="AWSXRayRecorder.Handlers.AspNetCore" Version="2.7.3" />
+    <PackageReference Include="AWSXRayRecorder.Handlers.AwsSdk" Version="2.8.3" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="5.0.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AwsDemo.Bll.Contracts\AwsDemo.Bll.Contracts.csproj" />
+    <ProjectReference Include="..\AwsDemo.Bll\AwsDemo.Bll.csproj" />
+    <ProjectReference Include="..\AwsDemo.Dal\AwsDemo.Dal.csproj" />
+  </ItemGroup>
+
+
+</Project>

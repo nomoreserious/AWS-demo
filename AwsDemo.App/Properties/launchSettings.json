@@ -11,10 +11,11 @@
   "profiles": {
     "AwsDemo": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "launchUrl": "",
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+        "AWS_ACCESS_KEY": "Value",
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AWS_REGION_NAME": "Value",
+        "AWS_SECRET_KEY": "Value"
       },
       "applicationUrl": "http://localhost:5025"
     },
@@ -23,6 +24,9 @@
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/",
       "publishAllPorts": true
+    },
+    "Kestrel": {
+      "commandName": "Executable"
     }
   }
 }

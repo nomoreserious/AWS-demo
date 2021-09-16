@@ -28,7 +28,7 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v2
          
-      - run: docker build --tag aws-demo:latest .
+      - run: docker build -t aws-demo:latest .
       - name: Build and push to ECR
         id: push-to-ecr
         uses: jwalton/gh-ecr-push@v1
